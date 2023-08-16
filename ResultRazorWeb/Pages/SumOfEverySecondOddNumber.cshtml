@@ -1,0 +1,20 @@
+﻿@page
+@model ResultRazorWeb.Pages.SumOfEverySecondOddNumberModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Сумма элементов массива</title>
+</head>
+<body>
+    <h1>Введите массив чисел через запятую</h1>
+    <form method="post" class="w-50">
+        <input type="text" asp-for="NumbersInput" placeholder="Введите числа через запятую" class="w-50">
+        <button type="submit">Рассчитать сумму</button>
+    </form>
+    <p>@Model.ResultText</p>
+</body>
+</html>
+
+@{
+}

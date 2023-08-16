@@ -1,0 +1,20 @@
+﻿@page
+@model ResultRazorWeb.Pages.PalindromeModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Проверка на палиндром</title>
+</head>
+<body>
+    <h1>Введите строку для проверки</h1>
+    <form method="post" class="w-50">
+        <input type="text" asp-for="InputString" placeholder="Введите строку" class="w-50">
+        <button type="submit">Проверить</button>
+    </form>
+    <p>@Model.ResultText</p>
+</body>
+</html>
+
+@{
+}

@@ -1,0 +1,16 @@
+﻿@model SumOfEverySecondOddNumberDto
+
+<h1>Введите массив чисел через запятую</h1>
+    <form asp-action="SumOfEverySecondOddNumber">
+        <input asp-for="Array" class="form-control" />
+        <span asp-validation-for="Array" class="text-danger"></span>
+        <div class="col-5">
+                <input type="submit" value="Create" class="btn btn-success form-control" />
+
+            </div>
+    </form>
+    <p id="result"></p>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
