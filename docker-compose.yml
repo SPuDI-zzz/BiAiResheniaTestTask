@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  dataaccesswebapi:
+    image: ${DOCKER_REGISTRY-}dataaccesswebapi
+    build:
+      context: .
+      dockerfile: DataAccessWebApi/Dockerfile
+
+  resultrazorweb:
+    image: ${DOCKER_REGISTRY-}resultrazorweb
+    build:
+      context: .
+      dockerfile: ResultRazorWeb/Dockerfile
+
